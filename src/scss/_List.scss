@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  height: 50rem;
+  width: 40rem;
+  border: 1px solid green;
+  background-color: rgb(232, 240, 56);
+  padding: 1rem 1rem 1rem 2rem;
+  display: flex;
+  align-items: center;
+  margin: 5rem 0;
+
+  @media screen and (max-width: 28.125em) {
+    height: calc(100vh - 7rem);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    height: 100%;
+    width: 100%;
+    list-style: none;
+    overflow: hidden;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 1rem;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: rgb(184, 152, 88);
+      border-radius: 1rem;
+      box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.7);
+      border-radius: 1rem;
+      border: 2px solid rgb(184, 152, 88);
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+  }
+}

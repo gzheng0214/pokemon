@@ -1,0 +1,24 @@
+.listItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-right: 1rem;
+
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  &:hover {
+    background-color: white;
+    cursor: pointer;
+  }
+
+  svg {
+    height: 3rem;
+    width: 3rem;
+  }
+  span {
+    margin-left: 3rem;
+  }
+}
